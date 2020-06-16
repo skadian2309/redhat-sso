@@ -1,0 +1,23 @@
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: config.openshift.io/v1
+kind: OAuth
+metadata:
+  creationTimestamp: "2020-06-10T17:01:41Z"
+  generation: 81
+  name: cluster
+  resourceVersion: "2578119"
+  selfLink: /apis/config.openshift.io/v1/oauths/cluster
+  uid: d6ec2e68-e36c-4b93-9c0f-6db7b794670b
+spec:
+  identityProviders:
+  - github:
+      clientID: ae6461d97897a0b49f6e
+      clientSecret:
+        name: github-secret
+      organizations:
+      - pocorg2309
+    mappingMethod: claim
+    name: github
+    type: GitHub
